@@ -11,41 +11,6 @@
   box-sizing: border-box;
 }
 
-.nav-modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.85);
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-
-.nav-modal.show {
-  display: flex;
-}
-
-.nav-content {
-  text-align: center;
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  max-width: 500px;
-  width: 100%;
-}
-
-.nav-input {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-}
-
 body, html {
   height: 100vh;
   width: 100vw;
@@ -127,6 +92,8 @@ main {
   z-index: 1000;
   opacity: 1;
   transition: opacity 1.5s ease-out;
+  padding: 20px;
+  text-align: center;
 }
 
 .welcome-text {
@@ -186,6 +153,42 @@ main {
   background-color: #ffdeda;
 }
 
+.nav-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.nav-modal.show {
+  display: flex;
+}
+
+.nav-content {
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.nav-input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Responsive styling for mobile devices */
 @media (max-width: 768px) {
   body, html {
     flex-direction: column;
@@ -212,6 +215,15 @@ main {
   .button-rn {
     width: 100%;
     padding: 0 10px;
+  }
+
+  .welcome-overlay {
+    padding: 15px;
+  }
+
+  .welcome-text {
+    font-size: 1.8rem;
+    line-height: 1.2;
   }
 }
 
